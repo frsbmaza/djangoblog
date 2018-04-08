@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block stylesheet %}{% endblock %}
+{% block content %}
+	<div class="form-control">
+
+		<form method="POST" action="">
+			{% csrf_token %}
+			<input type="text" id ='name' placeholder="Name" name="name" required='This Field Must Not Be Empty'>
+			<input type="password" id='pass' name="password" placeholder="password">
+			<button type="submit" id='sub' value="Submit">Submit</button>
+		</form>
+	</div>
+{% endblock %}
+{% block script %}{% endblock %}
